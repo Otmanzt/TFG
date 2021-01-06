@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="Nombre"/>
+
+    <EditText
+        android:id="@+id/editTextNombrePerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="Correo"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextEmailPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="Contraseña"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextPassPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/botonUpdatePerfil"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_redondeado"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Actualizar datos"/>
+
+</LinearLayout>

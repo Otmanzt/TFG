@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ayuda.AyudaFragment"
+    android:padding="10sp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_slideshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Hola, si tienes alguna incidencia o duda respecto a la app, rellene el formulario siguiente:"
+        android:fontFamily="@font/allerta"
+
+        />
+
+    <EditText
+        android:id="@+id/ediTextAyudaNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:layout_marginTop="15dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editTextAyudaDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Incidencia o duda"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="15dp"
+        android:minLines="10"
+        android:gravity="top"/>
+
+    <Button
+        android:id="@+id/botonEnviarAyuda"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/boton_redondeado"
+        android:layout_marginTop="15dp"
+        android:text="Enviar"/>
+
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_menu_inicio"
+            android:title="@string/menu_inicio" />
+        <item
+            android:id="@+id/nav_publicar_anuncio"
+            android:icon="@drawable/ic_menu_publicar_anuncio"
+            android:title="@string/menu_publicar_anuncio" />
+        <item
+            android:id="@+id/nav_mensajes"
+            android:icon="@drawable/ic_menu_mensajes"
+            android:title="@string/menu_mensajes" />
+        <item
+            android:id="@+id/nav_ayuda"
+            android:icon="@drawable/ic_menu_ayuda"
+            android:title="@string/menu_ayuda" />
+    </group>
+</menu>

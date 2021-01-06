@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.publicarAnuncio.PublicarAnuncioFragment">
+
+
+    <EditText
+        android:id="@+id/tituloAnuncio"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Título"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/descripcionAnuncio"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:hint="Descripción"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:gravity="top"/>
+
+    <Spinner
+        android:id="@+id/spinnerProvincia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        ></Spinner>
+
+    <EditText
+        android:id="@+id/contactoAnuncio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contacto"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/botonPublicarAnuncio"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Subir Anuncio"
+        android:layout_gravity="center"
+        android:background="@drawable/boton_redondeado"
+        android:layout_marginTop="20dp"
+        />
+
+
+</LinearLayout>

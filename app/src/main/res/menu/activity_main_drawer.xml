@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_menu_inicio"
+            android:title="@string/menu_inicio" />
+        <item
+            android:id="@+id/nav_inicar_sesion"
+            android:icon="@drawable/ic_menu_iniciar_sesion"
+            android:title="@string/menu_iniciar_sesion"
+            android:visible="true"/>
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/ic_menu_perfil"
+            android:title="@string/menu_perfil"
+            android:visible="true"/>
+        <item
+            android:id="@+id/nav_anuncios"
+            android:icon="@drawable/ic_icon_anuncio_toolbar"
+            android:title="@string/menu_anuncios"
+            android:visible="true"/>
+        <item
+            android:id="@+id/nav_publicar_anuncio"
+            android:icon="@drawable/ic_menu_publicar_anuncio"
+            android:title="@string/menu_publicar_anuncio"
+            android:visible="true"/>
+        <item
+            android:id="@+id/nav_mensajes"
+            android:icon="@drawable/ic_menu_mensajes"
+            android:title="@string/menu_mensajes"
+            android:visible="true"/>
+        <item
+            android:id="@+id/nav_ayuda"
+            android:icon="@drawable/ic_menu_ayuda"
+            android:title="@string/menu_ayuda" />
+        <item
+            android:id="@+id/nav_cerrar_sesion"
+            android:icon="@drawable/ic_menu_cerrar_sesion"
+            android:title="@string/menu_cerrar_sesion"
+            android:visible="true"/>
+
+    </group>
+</menu>

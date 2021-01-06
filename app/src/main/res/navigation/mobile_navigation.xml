@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.covid_help.ui.home.HomeFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.covid_help.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_inicio" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_inicar_sesion"
+        android:name="com.example.covid_help.ui.iniciarSesion.IniciarSesionFragment"
+        android:label="@string/menu_iniciar_sesion"
+        tools:layout="@layout/fragment_iniciarsesion" />
+
+    <fragment
+        android:id="@+id/nav_publicar_anuncio"
+        android:name="com.example.covid_help.ui.publicarAnuncio.PublicarAnuncioFragment"
+        android:label="@string/menu_publicar_anuncio"
+        tools:layout="@layout/activity_publicar_anuncio"
+        />
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.example.covid_help.ui.perfil.PerfilFragment"
+        android:label="@string/menu_perfil"
+        tools:layout="@layout/fragment_perfil"
+        />
+
+    <fragment
+        android:id="@+id/nav_anuncios"
+        android:name="com.example.covid_help.ui.anuncios.AnuncioFragment"
+        android:label="@string/menu_anuncios"
+        tools:layout="@layout/fragment_anuncios"
+        />
+
+    <fragment
+        android:id="@+id/nav_mensajes"
+        android:name="com.example.covid_help.ui.mensajes.MensajesFragment"
+        android:label="@string/menu_mensajes"
+        tools:layout="@layout/fragment_mensajes" />
+
+    <fragment
+        android:id="@+id/nav_ayuda"
+        android:name="com.example.covid_help.ui.ayuda.AyudaFragment"
+        android:label="@string/menu_ayuda"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_cerrar_sesion"
+        android:name="com.example.covid_help.ui.cerrarSesion.CerrarSesionFragment"
+        android:label="@string/menu_cerrar_sesion"
+        tools:layout="@layout/fragment_cerrarsesion" />
+
+</navigation>
